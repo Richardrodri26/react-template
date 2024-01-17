@@ -1,8 +1,12 @@
 {
   "compilerOptions": {
-    "target": "ES2020",
+    "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "lib": [
+      "DOM",
+      "DOM.Iterable",
+      "ESNext"
+    ],
     "module": "ESNext",
     "skipLibCheck": true,
 
@@ -13,6 +17,58 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
+    "baseUrl": "./src",
+    "paths": {
+      "@public/*": [
+        "../public/*"
+      ],
+      "@api/*": [
+        "./domain/api/*"
+      ],
+      "@services/*": [
+        "./domain/services/*"
+      ],
+      "@store/*": [
+        "./domain/store/*"
+      ],
+      "@entities/*": [
+        "./domain/entities/*"
+      ],
+      "@common/*":[
+        "./components/common/*"
+      ],
+      "@grilla/*": [
+        "./components/grilla/*"
+      ],
+      "@hooks/*": [
+        "./hooks/*"
+      ],
+      "@pages/*": [
+        "./pages/*"
+      ],
+      "@types/*": [
+        "./ts/*"
+      ],
+      "@utils/*": [
+        "./utils/*"
+      ],
+      "@graph/*": [
+        "./domain/graphql/*"
+      ],
+      "@navController/*": [
+        "./src/ui/components/nav/controller"
+      ],
+      "@components/*": [
+        "./components/*"
+      ],
+      "@css/*": [
+        "./styles/*"
+      ],
+      "@domain/*": [
+        "./domain/*"
+      ],
+
+    },
 
     /* Linting */
     "strict": true,
@@ -20,6 +76,6 @@
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true
   },
-  "include": ["src"],
+  "include": ["src", "codegen.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
 }

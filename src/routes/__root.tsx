@@ -1,13 +1,32 @@
-import { Outlet, RootRoute } from '@tanstack/react-router'
+import { Outlet, RootRoute, rootRouteWithContext } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'
+
+
+interface TransformedRoute {
+  [key: string]: {
+    key: string;
+    label: string;
+    path: string;
+    permission: string[];
+  };
+}
+
+interface MyRouterContext {
+  routerDetails: TransformedRoute
+}
+
+export const rootRoute = rootRouteWithContext<MyRouterContext>()({
+  component: () => (
+    <>
+      <Outlet />
+      <TanStackRouterDevtools />
+    </>
+  ),
+})
 
 export const Route = new RootRoute({
   component: () => (
     <>
-      <div className="p-2 flex gap-2">
-        <p>Esto es un template, se debe crear las rutas por las cuales se usara este proyecto y sus componentes</p>
-      </div>
-      <hr />
       <Outlet />
       <TanStackRouterDevtools />
     </>

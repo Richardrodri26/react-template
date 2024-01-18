@@ -95,6 +95,9 @@ dependencies:
   styled-components:
     specifier: ^6.1.8
     version: 6.1.8(react-dom@18.2.0)(react@18.2.0)
+  sweetalert2:
+    specifier: ^11.10.3
+    version: 11.10.3
   vite-tsconfig-paths:
     specifier: ^4.3.1
     version: 4.3.1(typescript@5.3.3)(vite@5.0.11)
@@ -6523,6 +6526,10 @@ packages:
     resolution: {integrity: sha512-kc6S2YS/2yXbtkSMunBtKdah4VFETZ8Oh6ONSmSd9bRxhqTrtARUCBUiWXH3xVPpvR7tz2CSnkuXVE42EcGnMw==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /sweetalert2@11.10.3:
+    resolution: {integrity: sha512-mZYtQR7v+khyEruq0SsVUa6XIdI9Aue8s2XAIpAwdlLN1T0w7mxKEjyubiBZ3/bLbHC/wGS4wNABvXWubCizvA==}
     dev: false
 
   /symbol-observable@4.0.0:

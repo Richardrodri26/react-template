@@ -140,12 +140,12 @@ const appColors: { [key: string]: IGlobalStyle } = {
         scrollHover: "rgb(1, 37, 69)"
     },
     "GreenThemeResponsive": {
-        main: "rgb(19, 155, 30)",
-        contraryMain: "rgb(15, 119, 24)",
-        mainColorA2: "rgba(19, 155, 30, 0.145)",
-        scroll: "rgb(17, 140, 28)",
-        scrollHover: "rgb(16, 125, 25)",
-        opacityMain: "rgba(205, 230, 223, 0.427)",
+        main: "124.8529411764706 78.16091954022988% 34.11764705882352%",
+        contraryMain: "125.19230769230771 77.61194029850745% 26.27450980392157%",
+        mainColorA2: "124.8529411764706 78.16091954022988% 34.11764705882352%",
+        scroll: "125.36585365853658 78.343949044586% 30.784313725490197%",
+        scrollHover: "124.95412844036699 77.30496453900709% 27.647058823529413%",
+        opacityMain: "163.2 33.33333333333332% 85.29411764705883%",
     },
     "RedThemeResponsive": {
         main: "rgb(168, 5, 33)",

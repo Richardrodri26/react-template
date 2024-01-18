@@ -9,7 +9,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "format": "prettier --write \"./src/**/*.{ts,tsx}\" --config ./.prettierrc",
-    "router:gen": "tsr generate"
+    "router:gen": "tsr generate",
+    "router:watch": "tsr watch"
   },
   "dependencies": {
     "@apollo/client": "^3.8.9",
@@ -42,6 +43,7 @@
     "react-paginate": "^8.2.0",
     "react-query": "^3.39.3",
     "styled-components": "^6.1.8",
+    "sweetalert2": "^11.10.3",
     "vite-tsconfig-paths": "^4.3.1",
     "zustand": "^4.4.7"
   },

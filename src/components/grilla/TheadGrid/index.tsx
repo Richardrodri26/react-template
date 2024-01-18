@@ -50,7 +50,7 @@ const ThContent = ({ currentTh, isLastChild, hiddenColumn }: { currentTh: IThead
     const ref = useRef<HTMLDivElement>(null)
 
     return (
-        <motion.th className={` ${(currentTh.canSort)  ? "hover:bg-primary-opacity" : ""} ${isSorting ? "bg-primary-opacity" : ""}`} style={currentTh.style} data-action={Boolean(currentTh.isAction)} animate={thAnimation} variants={gridColumnAnimation}>
+        <motion.th className={` ${(currentTh.canSort)  ? "hover:bg-primary-opacity/40" : ""} ${isSorting ? "bg-primary-opacity/40" : ""}`} style={currentTh.style} data-action={Boolean(currentTh.isAction)} animate={thAnimation} variants={gridColumnAnimation}>
             <div className={styles.thead__content} ref={ref} style={currentTh.thComponent ? { margin: "auto" } : currentTh.style} data-type={currentTh.gridfieldValue}>
 
                 {
